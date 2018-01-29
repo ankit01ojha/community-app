@@ -291,7 +291,7 @@
                 <div class="col-sm-2">
                     <input type="text" placeholder="{{'label.input.default' | translate}}" id="numberOfRepayments"
                            name="numofrepayments" class="form-control" ng-model="formData.numberOfRepayments" required
-                           late-validate/>
+                           late-validate num-validate/>
                 </div>
                 <div class="col-sm-2">
                     <input type="text" placeholder="{{'label.input.maximum' | translate}}" id="maxNumberOfRepayments"
@@ -299,6 +299,7 @@
                 </div>
                 <div class="col-sm-2">
                     <form-validate valattributeform="Terms" valattribute="numofrepayments"/>
+                    <number-validate valattributeform="Terms" valattribute="numofrepayments" />
                 </div>
             </div>
 

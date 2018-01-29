@@ -10,8 +10,10 @@
                         scope.$apply(function () {
                             if (elm.val() == "") {
                                 ctrl.$setValidity('req', false);
+                                console.log("0");
                             } else {
                                 ctrl.$setValidity('req', true);
+                                console.log("1");
                             }
                         });
                     });
